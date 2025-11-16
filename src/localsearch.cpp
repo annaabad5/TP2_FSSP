@@ -1,5 +1,5 @@
 #include "localsearch.hpp"  // Incluye la cabecera que acabamos de definir
-#include "heuristics.hpp"   // MUY IMPORTANTE: Para acceder a calculate_makespan
+#include "heuristicas.hpp"   // MUY IMPORTANTE: Para acceder a calculate_makespan
 #include <vector>
 #include <algorithm>        // Para std::swap y std::max
 #include <limits>           // Para std::numeric_limits

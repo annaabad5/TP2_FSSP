@@ -1,4 +1,4 @@
-#include "heuristics.hpp" 
+#include "heuristicas.hpp" 
 #include <vector>
 #include <numeric>     
 #include <algorithm>   
@@ -8,7 +8,7 @@ using namespace std;
 
 
 
-int calcularMakespan(const FSSPInstance& instance, const std::vector<int>& sequence) {
+int calculate_makespan(const FSSPInstance& instance, const std::vector<int>& sequence) {
     int n = sequence.size();
     if (n == 0) {
         return 0;
@@ -63,7 +63,7 @@ Solution run_neh(const FSSPInstance& instance) {
     for (int j = 0 ; j < n ; j++){
         int tiempo_t = 0;
         for (int i = 0 ; i < m; i++){
-            tiempo_t += tiempos[j][i]
+            tiempo_t += tiempos[j][i];
 
         }
         pair<int, int> elem = {tiempo_t, j};
